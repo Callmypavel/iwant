@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3F3F3"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/topcolor"
+        android:orientation="vertical" >
+
+        <ImageButton
+            android:id="@+id/backButton"
+            android:onClick="getBack"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:background="#00000000"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="56dp"
+            android:text="Ali Connors"
+            android:textColor="#FFFFFF"
+            android:textSize="32sp" />
+
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/userHead"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/defaulthead" />
+
+        <Button
+            android:background="@drawable/signin"
+            android:id="@+id/signin"
+            android:onClick="signin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="登陆"
+            android:textColor="#EA4275"
+            android:visibility="visible" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/friend"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_marginTop="48dp"
+        android:background="#FFFFFF"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/myfriend"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:src="@drawable/ufriend" />
+
+        <TextView
+            android:id="@+id/MyFriends"
+            android:onClick="MyFriends"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@+id/myfriend"
+            android:text="我的好友" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/news"
+        android:onClick="Mymessage"
+        android:layout_marginTop="48dp"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/friend"
+        android:background="#FFFFFF"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/mynews"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:src="@drawable/umessage" />
+
+        <TextView
+            android:id="@+id/Mymessage"
+           
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@+id/mynews"
+            android:text="我的消息" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/collection"
+        android:onClick="Mycollections"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/news"
+        android:background="#FFFFFF"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/mycollection"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:src="@drawable/ucollection" />
+
+        <TextView
+            android:id="@+id/MyCollections"
+            
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@+id/mycollection"
+            android:text="我的收藏" />
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/edit"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_alignBottom="@+id/news"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="67dp"
+        android:layout_marginRight="16dp"
+        android:background="#00000000"
+        android:onClick="edit"
+        android:src="@drawable/ovalbutton2"
+        android:visibility="visible" />
+
+</RelativeLayout>

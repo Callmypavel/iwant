@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <include layout="@layout/top"
+        android:id="@+id/top"/>
+
+    <android.support.v4.view.ViewPager
+        android:layout_below="@+id/top"
+        android:id="@+id/id_viewpager"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        >
+    </android.support.v4.view.ViewPager>
+
+    <ImageButton
+        android:id="@+id/userButton"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginRight="16dp"
+        android:background="#00000000"
+        android:onClick="enterUser"
+        android:src="@drawable/ovalbutton" />
+
+</RelativeLayout>
+<!-- From: file:/D:/AndroidProjects/quanta.iwant/app/src/main/res/layout/main.xml -->

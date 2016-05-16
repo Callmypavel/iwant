@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3F3F3"
+    android:orientation="vertical" >
+
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:background="#00000000"
+            android:onClick="back"
+            android:src="@drawable/edit_back" />
+
+        <Button
+            android:id="@+id/userhead"
+            android:onClick="userhead"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="48dp"
+            android:background="#FFFFFF"
+            android:gravity="center"
+            android:text="修改头像" />
+
+        <EditText
+            android:id="@+id/nickname"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_below="@+id/userhead"
+            android:background="#FFFFFF"
+            android:gravity="center"
+            android:hint="Ali Connors" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="129dp"
+            android:text="静静在等待键盘的出现" />
+
+        <Button
+            android:onClick="save"
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="#00000000"
+            android:textColor="#66cc99"
+            android:text="save" />
+
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/preview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@android:drawable/alert_light_frame" />
+    
+</RelativeLayout>
+

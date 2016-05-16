@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+      
+
+      <TextView
+          android:id="@+id/Parentitem"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignBaseline="@+id/Childitem1"
+          android:layout_alignBottom="@+id/Childitem1"
+          android:layout_alignParentLeft="true"
+          android:layout_marginLeft="16dp"
+          android:gravity="center"
+          android:text="TextView"
+          android:textColor="#00C0D8" />
+      <TextView
+          android:id="@+id/Childitem1"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentRight="true"
+          android:layout_alignParentTop="true"
+          android:layout_marginRight="69dp"
+          android:layout_marginTop="26dp"
+          android:gravity="center"
+          android:text="TextView" />
+      <TextView
+          android:id="@+id/Childitem2"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignRight="@+id/Childitem1"
+          android:layout_below="@+id/Childitem1"
+          android:layout_marginTop="28dp"
+          android:gravity="center"
+          android:text="TextView" />
+      <TextView
+          android:id="@+id/Childitem3"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignRight="@+id/Childitem2"
+          android:layout_below="@+id/Childitem2"
+          android:layout_marginTop="32dp"
+          android:gravity="center"
+          android:text="TextView" />
+
+        <TextView
+            android:id="@+id/Childitem4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/Childitem3"
+            android:layout_below="@+id/Childitem3"
+            android:layout_marginTop="33dp"
+            android:gravity="center"
+            android:text="TextView" />
+
+      <View
+          android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:layout_alignParentLeft="true"
+          android:layout_below="@+id/Childitem4"
+          android:layout_marginTop="34dp"
+          android:background="?android:attr/listDivider" />
+
+</RelativeLayout>

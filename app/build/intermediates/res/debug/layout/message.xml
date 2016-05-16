@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/top"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    
+    android:orientation="vertical" >
+
+	<RelativeLayout
+	    android:id="@+id/head"
+	    android:layout_width="match_parent"
+	    android:layout_height="48dp"
+	    android:background="@drawable/topcolor"
+	    android:orientation="horizontal" >
+
+        <TextView
+            android:textColor="#FFFFFF"
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/message_back"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal|clip_horizontal"
+            android:textSize="20sp"
+            android:text="我的消息" />
+
+        <ImageButton
+            android:id="@+id/message_back"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="13dp"
+            android:background="#00000000"
+            android:onClick="message_back"
+            android:src="@drawable/back" />
+
+        </RelativeLayout>
+        <ListView
+        android:id="@+id/message"
+        android:layout_below="@+id/head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:choiceMode="singleChoice"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="10dp" >
+        </ListView>
+
+</RelativeLayout>
+<!-- From: file:/D:/AndroidProjects/quanta.iwant/app/src/main/res/layout/message.xml -->

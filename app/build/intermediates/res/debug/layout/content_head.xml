@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/topcolor"
+    android:layout_height="96dp"
+    android:orientation="vertical" >
+     <ImageButton
+            android:onClick="back"
+            android:id="@+id/back"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:background="#00000000"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:textColor="#FFFFFF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/back"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal|clip_horizontal"
+            android:text="iwant" />
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_alignParentLeft="true"
+               android:layout_above="@+id/content_cursor"
+               android:orientation="horizontal" >
+
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:clickable="true"
+                   android:gravity="center"
+                   android:onClick="content"
+                   android:text="内容"
+                   android:textColor="#FFFFFF" />
+
+               <TextView
+                   android:id="@+id/repost_tab"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:clickable="true"
+                   android:gravity="center"
+                   android:onClick="repost"
+                   android:text="转发"
+                   android:textColor="#FFFFFF" />
+           </LinearLayout>
+
+           <ImageView
+               android:id="@+id/content_cursor"
+               android:layout_width="180dp"
+               android:layout_height="wrap_content"
+               android:layout_alignParentBottom="true"
+               android:scaleType="matrix"
+               android:src="@drawable/chosen" />
+
+</RelativeLayout>
+<!-- From: file:/D:/AndroidProjects/quanta.iwant/app/src/main/res/layout/content_head.xml -->

@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="D:\AndroidProjects\quanta.iwant\app\src\main\assets"><file name="signin.png" path="D:\AndroidProjects\quanta.iwant\app\src\main\assets\signin.png"/></source></dataSet><dataSet config="debug"><source path="D:\AndroidProjects\quanta.iwant\app\src\debug\assets"/></dataSet></merger>
